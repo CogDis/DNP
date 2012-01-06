@@ -1,0 +1,15 @@
+name: DNP
+main: com.precipicegames.zeryl.dnp.DNP
+version: 1.0
+commands:
+    dnp:
+        description: Manage DNP status
+        usage: |
+            /<command> status user - Checks on current DNP status
+            /<command> toggle user - Toggles the user between DNP status
+            /<command> set user    - Sets DNP to true
+            /<command> clear user  - Clears the DNP flag
+permissions:
+    com.precipice.dnp:
+        description: Whether or not you can run the DNP command.
+        default: op
